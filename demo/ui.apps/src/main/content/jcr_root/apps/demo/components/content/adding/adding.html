@@ -1,0 +1,29 @@
+<script>
+function add() {
+    var num1 = $('#num1').val();
+    var num2 = $('#num2').val();
+    $.ajax({
+        url: '/bin/add',
+        method: 'GET',
+        data: {
+            num1: num1,
+            num2: num2
+        },
+        success: function(resultText) {
+            $('#result').text(resultText);
+        },
+        error: function(jqXHR, exception) {
+            console.log('Error occured!!');
+        }
+    });
+}
+</script>
+
+  <label for="num1">First Number:</label><br>
+  <input type="number" id="num1" name="num1" placeholder="Enter a number"><br><br>
+  <label for="num2">Second Number:</label><br>
+  <input type="number" id="num2" name="num2" placeholder="Enter a number"><br><br>
+  <input type="submit" value="Submit" onclick="add()">
+
+<br><br>
+<h3 id="result"></h3>
