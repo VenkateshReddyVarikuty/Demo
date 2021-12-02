@@ -1,0 +1,17 @@
+{
+    "banner": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "admin",
+      "buttonTitle": "DISCOVER NOW",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:created": "Fri Jun 18 2021 00:39:13 GMT+0530",
+      "img": "/content/dam/ugams/hero-img.png",
+      "desc": "You will begin to realise why",
+      "path": "/content/ugams/us/en/about",
+      "title": "THIS IS ME",
+      "heading": "PHILIP GILBERT",
+      "jcr:lastModified": "Fri Jun 18 2021 13:14:27 GMT+0530",
+      "sling:resourceType": "ugams/components/content/banner-area"
+    }
+
+}
