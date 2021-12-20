@@ -1,0 +1,19 @@
+<h1>OSGi Configuration Service</h1>
+<sly data-sly-use.osgiconfig="com.Ugams.core.models.OSGiConfigModel"></sly>
+   <div>
+       <p> Service Name : <b>${osgiconfig.serviceName}</b></p>
+   </div>
+   <div>
+       <p> Service ID : <b>${osgiconfig.serviceID}</b></p>
+   </div>
+   <div>
+       <p> Service : <b>${osgiconfig.isService}</b></p>
+   </div>
+   <div>
+       <p> Run Mode : <b>${osgiconfig.runModes}</b></p>
+   </div>
+   <div><b>Service Countries</b>
+   </div>
+   <ul data-sly-list="${osgiconfig.countries}">
+      <li>${item}</li>
+   </ul>
