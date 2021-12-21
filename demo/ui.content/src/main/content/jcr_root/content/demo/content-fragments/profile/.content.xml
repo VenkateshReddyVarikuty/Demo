@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="4f14a942-bd38-4303-969c-1ceea9b8f5dd">
+    <jcr:content
+        cq:name="profile"
+        cq:parentPath="/content/dam/demo/content-fragments"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-12-20T16:57:22.422+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Profile"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-12-20T16:57:22.422+05:30">
+        <data
+            cq:model="/conf/demo/settings/dam/cfm/models/profile"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                firstName="Venkatesh Reddy"
+                firstName_x0040_LastModified="{Date}2021-12-20T16:23:40.943+05:30"
+                Gender="Male"
+                Gender_x0040_LastModified="{Date}2021-12-20T16:23:40.946+05:30"
+                lastName="Varikuty"
+                lastName_x0040_LastModified="{Date}2021-12-20T16:23:40.946+05:30"
+                ProfilePic="/content/dam/demo/asset.jpg"
+                ProfilePic_x0040_LastModified="{Date}2021-12-20T16:23:40.946+05:30"/>
+            <vijay
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                firstName="Vijay"
+                firstName_x0040_LastModified="{Date}2021-12-20T16:27:43.245+05:30"
+                Gender="Male"
+                Gender_x0040_LastModified="{Date}2021-12-20T16:27:43.250+05:30"
+                lastName="Varikuty"
+                lastName_x0040_LastModified="{Date}2021-12-20T16:27:43.248+05:30"
+                ProfilePic="/content/dam/demo/asset.jpg"
+                ProfilePic_x0040_LastModified="{Date}2021-12-20T16:27:43.249+05:30"/>
+            <pranay
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                firstName="Pranay"
+                firstName_x0040_LastModified="{Date}2021-12-20T16:57:22.383+05:30"
+                Gender="Male"
+                Gender_x0040_LastModified="{Date}2021-12-20T16:57:22.384+05:30"
+                lastName="Varikuty"
+                lastName_x0040_LastModified="{Date}2021-12-20T16:57:22.384+05:30"
+                ProfilePic="/content/dam/demo/asset.jpg"
+                ProfilePic_x0040_LastModified="{Date}2021-12-20T16:57:22.384+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <vijay
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Vijay"
+                    name="vijay">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[firstName:5fbfd735-f487-49a2-8052-e9801f55bad8,lastName:5fbfd735-f487-49a2-8052-e9801f55bad8,ProfilePic:5fbfd735-f487-49a2-8052-e9801f55bad8,Gender:5fbfd735-f487-49a2-8052-e9801f55bad8]"/>
+                </vijay>
+                <pranay
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Pranay"
+                    name="pranay">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[firstName:000095b1-a7f1-4d0c-b75e-20cb3bceba81,lastName:000095b1-a7f1-4d0c-b75e-20cb3bceba81,ProfilePic:000095b1-a7f1-4d0c-b75e-20cb3bceba81,Gender:000095b1-a7f1-4d0c-b75e-20cb3bceba81]"/>
+                </pranay>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
