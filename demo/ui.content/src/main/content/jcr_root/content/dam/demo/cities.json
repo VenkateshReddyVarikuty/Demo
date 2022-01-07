@@ -1,0 +1,47 @@
+{
+   "australia":[
+      {
+         "text":"Sydney",
+         "value":"sydney"
+      },
+      {
+         "text":"Melbourne",
+         "value":"melbourne"
+      },
+      {
+         "text":"Perth",
+         "value":"perth"
+      },
+      {
+         "text":"Adelaide",
+         "value":"adelaide"
+      },
+      {
+         "text":"Brisbane",
+         "value":"brisbane"
+      }
+   ],
+   
+   "india":[
+      {
+         "text":"Mumbai",
+         "value":"mumbai"
+      },
+      {
+         "text":"Bengaluru",
+         "value":"bengaluru"
+      },
+      {
+         "text":"New Delhi",
+         "value":"delhi"
+      },
+      {
+         "text":"Hyderabad",
+         "value":"hyderabad"
+      },
+      {
+         "text":"Chennai",
+         "value":"chennai"
+      }
+   ]
+}

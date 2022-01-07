@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <option
+                        granite:class="cq-dialog-dropdown-showhide"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Opt"
+                        name="./option">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-dialog-dropdown-showhide-target=".showhidetargets"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <phonenumber
+                                jcr:primaryType="nt:unstructured"
+                                text="Phone Number"
+                                value="Phone Number"/>
+                            <address
+                                jcr:primaryType="nt:unstructured"
+                                text="Address"
+                                value="Address"/>
+                            <gender
+                                jcr:primaryType="nt:unstructured"
+                                text="Gender"
+                                value="Gender"/>
+                            <languages
+                                jcr:primaryType="nt:unstructured"
+                                text="Languages"
+                                value="Languages"/>
+                        </items>
+                    </option>
+                    <targetpn
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="Phone Number"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <numberfield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Enter Number"
+                                name="./cellno"/>
+                        </items>
+                    </targetpn>
+                    <targeta
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="Address"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <street
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Street"
+                                name="./street"/>
+                            <city
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="City"
+                                name="./city"/>
+                            <state
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="State"
+                                name="./state"/>
+                        </items>
+                    </targeta>
+                    <targetg
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="Gender"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <gselection
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                name="./gender"
+                                text="Gender">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <male
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                        text="Male"
+                                        value="Male"/>
+                                    <female
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                        text="Female"
+                                        value="Female"/>
+                                </items>
+                            </gselection>
+                        </items>
+                    </targetg>
+                    <targetl
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="Languages"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <eng
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                defaultChecked="{Boolean}false"
+                                name="./eng"
+                                text="English"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <hin
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                defaultChecked="{Boolean}false"
+                                name="./hin"
+                                text="Hindi"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <tel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                defaultChecked="{Boolean}false"
+                                name="./tel"
+                                text="Telugu"
+                                uncheckedValue="false"
+                                value="true"/>
+                        </items>
+                    </targetl>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
