@@ -1,1 +1,9 @@
-Dropdown component
+<h1>dropdown-component</h1>
+    <sly data-sly-test="${properties.option == 'Phone Number' && properties.cellno}">Phone Number: ${properties.cellno}</sly>
+    <sly data-sly-test="${properties.option == 'Address' && properties.street}">Street: ${properties.street}</sly>
+    <sly data-sly-test="${properties.option == 'Address' && properties.city}">City: ${properties.city}</sly>
+    <sly data-sly-test="${properties.option == 'Address' && properties.state}">State: ${properties.state}</sly>
+    <sly data-sly-test="${properties.option == 'Gender' && properties.gender}">Gender: ${properties.gender}</sly>
+    <sly data-sly-test="${properties.option == 'Languages' && properties.eng}">Language: ${properties.eng}</sly>
+    <sly data-sly-test="${properties.option == 'Languages' && properties.hin}">Language: ${properties.hin}</sly>
+    <sly data-sly-test="${properties.option == 'Languages' && properties.tel}">Language: ${properties.tel}</sly>
