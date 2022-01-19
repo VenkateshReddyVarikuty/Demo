@@ -1,0 +1,12 @@
+<sly data-sly-use.users="com.ugam.demo.core.models.AboutUsModel"></sly>
+
+<h2 hidden>${users.url}</h2>
+  <div data-sly-list.items=${users.data}>
+
+      <img src="${items.avatar}"/></br>
+
+            <span>${items.fname}</span>
+            <span>${items.lname}</span>
+		<p>${items.email}</p>
+
+</div>
